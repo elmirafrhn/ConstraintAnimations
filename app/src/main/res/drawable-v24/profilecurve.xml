@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="900"
+    android:viewportHeight="200"
+    android:width="900dp"
+    android:height="200dp">
+
+    <path
+        android:name="curvefull"
+        android:pathData="M0.000,200.000 L900.000,200.000 L900.000,80.0 C900.0,80.0 754.597,-100.924 556.190,80.0 C364.780,255.809 0.000,80.0 0.000,80.0z"
+            android:fillColor="@color/background_gray"/>
+
+</vector>
+
+

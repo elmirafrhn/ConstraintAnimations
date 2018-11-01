@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:text="شهر کتاب مرکزی"/>
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".2"/>
+
+        <android.support.constraint.Guideline
+                android:id="@+id/guide2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".7"/>
+        <ImageView
+                app:layout_constraintTop_toTopOf="@+id/guideLine"
+                android:id="@+id/curve"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/profilecurve"/>
+
+        <ImageView
+                app:layout_constraintTop_toTopOf="@+id/guideLine"
+
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                app:layout_constraintStart_toStartOf="@+id/guide2"
+                android:rotation="45"
+                app:srcCompat="@drawable/ic_launcher_background"/>
+        <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                app:layout_constraintStart_toStartOf="@+id/guide2"
+                app:layout_constraintTop_toBottomOf="@+id/icon1"
+                android:rotation="45"
+                app:srcCompat="@drawable/ic_launcher_background"/>
+        <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/icon2"
+                app:layout_constraintEnd_toEndOf="@+id/guide2"
+                app:layout_constraintTop_toTopOf="@+id/icon1"
+                android:rotation="45"
+                app:srcCompat="@drawable/ic_launcher_background"/>
+
+</android.support.constraint.ConstraintLayout>
