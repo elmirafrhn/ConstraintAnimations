@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <android.support.constraint.Guideline
-            android:id="@+id/guide1"
+            android:id="@+id/guideLine1"
             android:orientation="vertical"
             app:layout_constraintGuide_percent=".7"
             android:layout_width="match_parent"
@@ -48,7 +48,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:layout_constraintEnd_toStartOf="@+id/icon2"
-            app:layout_constraintStart_toEndOf="@+id/guide1"
+            app:layout_constraintStart_toEndOf="@+id/guideLine1"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_launcher_background"/>
 
