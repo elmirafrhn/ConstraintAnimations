@@ -17,20 +17,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun addAnimationOperations() {
         var set=false
-        val constraint1= ConstraintSet()
-        constraint1.clone(root)
-        val constrant2=ConstraintSet()
-        constrant2.clone(this,R.layout.second_layout)
+        val startingConstraintSet= ConstraintSet()
+        startingConstraintSet.clone(root)
+        val finishingConstraintSet=ConstraintSet()
+        finishingConstraintSet.clone(this,R.layout.second_layout)
 
         icon3.setOnClickListener{
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 TransitionManager.beginDelayedTransition(root)
-                val constraint=if(set) constraint1 else constrant2
+                val constraint=if(set) startingConstraintSet else finishingConstraintSet
                 constraint.applyTo(root)
                 set=!set
             }
         }
-
-
     }
 }
